@@ -1,0 +1,44 @@
+.caurousel {
+    margin-top: 90px;
+    background: url(../img/banner4.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    display: grid;
+    align-items: center;
+    padding: 1em 0;
+
+    .caurousel-content {
+        position: relative;
+
+        .container {
+            h2 {
+                @include textStyle($text-light,50px,600);
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+
+                li {
+                    @include textStyle($text-light,20px,400);
+                    a {
+                        color: $text-green;
+                    }
+                }
+            }
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        min-height: 100%;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background-color: #0c0c0c;
+        opacity: .6;
+    }
+}

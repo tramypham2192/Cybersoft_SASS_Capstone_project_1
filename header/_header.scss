@@ -1,0 +1,55 @@
+header {
+    background-color: $text-light;
+    position: fixed;
+    top: 40px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12);
+    .container {
+        height: 90px;
+
+        .navbar {
+            .container-fluid {
+                a {
+                    h1 {
+                        @include textStyle($text-green,34px,600);
+
+                    }
+
+
+                }
+
+                .navbar-collapse {
+                    display: block !important;
+
+                    ul {
+                        justify-content: end;
+
+                        li {
+                            font-weight: 400;
+                            font-size: 20PX;
+                            padding: 0 12px;
+                            transition: all .5s;
+
+                            .nav-link {
+                                color: $text-dark;
+                            }
+
+                            .nav-link.active {
+                                color: $text-green !important;
+                            }
+
+                            &:hover {
+                                .nav-link {
+                                    color: $text-green !important;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
