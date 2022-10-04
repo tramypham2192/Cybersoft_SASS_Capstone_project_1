@@ -1,0 +1,104 @@
+@mixin h6Footer {
+    color: $text-light;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+;
+$text-footer: rgb(105, 105, 105);
+
+footer {
+    color: $text-footer;
+    background-color: #111;
+
+    .container {
+        .footer-content {
+            .footer-contact {
+                h6 {
+                    @include h6Footer;
+                }
+
+                ul {
+                    li {
+                        @include textStyle($text-footer, 16px, 400);
+                        line-height: 28px;
+                        margin-bottom: 5px;
+                        p {
+                            a {
+                                @include textStyle($text-footer, 16px, 400);
+                                line-height: 28px;
+
+                                &:hover {
+                                    color: #fff;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .icon-list {
+                    .icon {
+                        color: $text-footer;
+                        padding: 10px;
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .footer-item {
+                h6 {
+                    @include h6Footer;
+                }
+
+                ul {
+                    li {
+                        @include textStyle($text-footer, 16px, 400);
+                        line-height: 28px;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #fff;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
+        border-top: 1px solid rgba(103, 99, 99, 0.14);
+
+        p {
+            a {
+                color: $text-red;
+            }
+        }
+    }
+}
+.backToTop {
+    width: 50px;
+    height: 50px;
+    background: $text-green;
+    border-radius: 8px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: #fff;
+    transition: all 0.2s;
+    box-shadow: -4px 4px 24px -10px $text-green;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}

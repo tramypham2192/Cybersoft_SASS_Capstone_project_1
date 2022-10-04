@@ -1,0 +1,34 @@
+@import '../body/body';
+
+@import '../header/header';
+
+@import '../carousel/carousel';
+
+@import '../footer/footer';
+// services
+.services {
+    .container {
+        .services-content {
+            .photo img {
+                cursor: pointer;
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .left {
+                padding-right: 24px !important;
+            }
+
+            .nd {
+                p {
+                    @include pSub();
+                }
+
+                .read {
+                    @include Read;
+                }
+            }
+        }
+    }
+}
+

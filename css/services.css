@@ -216,44 +216,31 @@ footer .bottom p a {
   opacity: 1;
 }
 
-.gallery .container {
-  padding-top: 70px;
-}
-.gallery .container .gallery-header h6.sub-title {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 36px;
-  color: #f53626;
-  letter-spacing: 1px;
-}
-.gallery .container .gallery-header .hny-title {
-  color: #000c04;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-}
-.gallery .container .item-group .row .gallery-item {
-  padding: 15px;
+.services .container .services-content .photo img {
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-.gallery .container .item-group .row .gallery-item img {
-  border-radius: 10px;
   width: 100%;
+  border-radius: 10px;
 }
-.gallery .container .item-group .row .gallery-item::before {
-  content: "";
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: -100%;
-  display: block;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-  transform: skewX(-25deg);
+.services .container .services-content .left {
+  padding-right: 24px !important;
 }
-.gallery .container .item-group .row .gallery-item:hover::before {
-  left: 125%;
-  transition: all 0.5s;
+.services .container .services-content .nd p {
+  font-size: 1.2em;
+  line-height: 28px;
+  color: #696969;
+}
+.services .container .services-content .nd .read {
+  font-size: 17px;
+  padding: 0;
+  border-bottom: 2px solid #189a46;
+  color: #000c04;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  border-radius: 0;
+  margin-top: 20px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.services .container .services-content .nd .read:hover {
+  color: #189a46;
 }

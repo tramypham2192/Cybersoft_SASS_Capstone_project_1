@@ -1,7 +1,8 @@
-@import './body/body';
+@import '../body/body';
 
-@import './header/header';
-@import './carousel/carousel';
+@import '../header/header';
+@import '../carousel/carousel';
+@import '../footer/footer';
 .gallery {
     .container {
         padding-top: 70px;

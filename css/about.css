@@ -50,7 +50,7 @@ a {
   color: #189a46;
 }
 
-.pSub {
+.pSub, .history .feature .container .history-content .historyYear .history-item p {
   font-size: 1.2em;
   line-height: 28px;
   color: #696969;
@@ -216,44 +216,45 @@ footer .bottom p a {
   opacity: 1;
 }
 
-.gallery .container {
-  padding-top: 70px;
+.about .container .about-content {
+  padding: 90px 0px;
 }
-.gallery .container .gallery-header h6.sub-title {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 36px;
-  color: #f53626;
-  letter-spacing: 1px;
-}
-.gallery .container .gallery-header .hny-title {
+.about .container .about-content .about-left h4 {
   color: #000c04;
-  font-size: 40px;
+  font-size: 22px;
   font-weight: 600;
-  line-height: 48px;
+  line-height: 32px;
+  opacity: 0.9;
 }
-.gallery .container .item-group .row .gallery-item {
-  padding: 15px;
-  cursor: pointer;
+.history .feature {
+  background: url(../img/banner2.jpg) no-repeat center;
+  background-size: cover;
   position: relative;
-  overflow: hidden;
+  z-index: 1;
 }
-.gallery .container .item-group .row .gallery-item img {
-  border-radius: 10px;
-  width: 100%;
-}
-.gallery .container .item-group .row .gallery-item::before {
-  content: "";
-  width: 50%;
-  height: 100%;
+.history .feature::before {
   position: absolute;
+  content: "";
+  background-color: rgba(0, 4, 8, 0.69);
   top: 0;
-  left: -100%;
-  display: block;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-  transform: skewX(-25deg);
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  z-index: -1;
 }
-.gallery .container .item-group .row .gallery-item:hover::before {
-  left: 125%;
-  transition: all 0.5s;
+.history .feature .container .history-content {
+  max-width: 640px;
+  margin-left: auto;
+}
+.history .feature .container .history-content h3 {
+  color: #fff;
+}
+.history .feature .container .history-content .pSub, .history .feature .container .history-content .historyYear .history-item p {
+  color: #fff;
+  opacity: 0.7;
+}
+.history .feature .container .history-content .historyYear .history-item .year {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
 }
