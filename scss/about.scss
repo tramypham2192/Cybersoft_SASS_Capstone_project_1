@@ -5,59 +5,172 @@
 @import '../carousel/carousel';
 @import '../footer/footer';
 
-.about{
-    .container{
-        .about-content{
+img {
+    width: 100%;
+}
+
+.about {
+    .container {
+        .about-content {
             padding: 90px 0px;
-            .about-left{
-                h4{
-                    @include textStyle($text-dark,22px,600);
+
+            .about-left {
+                h4 {
+                    @include textStyle($text-dark, 22px, 600);
                     line-height: 32px;
                     opacity: 0.9;
                 }
             }
-            .about-right{
-            }
         }
     }
 }
-.history{
-    .feature{
+
+.history {
+    .feature {
         background: url(../img/banner2.jpg) no-repeat center;
         background-size: cover;
         position: relative;
         z-index: 1;
-        &::before{
+
+        &::before {
             position: absolute;
             content: "";
-            background-color: rgba(0,4,8,0.69);
+            background-color: rgba(0, 4, 8, 0.69);
             top: 0;
             left: 0;
             right: 0;
             min-height: 100%;
-           z-index: -1;
-            
+            z-index: -1;
+
         }
-        .container{
-            .history-content{
+
+        .container {
+            .history-content {
                 max-width: 640px;
                 margin-left: auto;
-                h3{
+
+                h3 {
                     color: $text-light;
                 }
-                .pSub{
+
+                .pSub {
                     color: $text-light;
                     opacity: 0.7;
                 }
-                .historyYear{
-                    .history-item{
-                        .year{
-                            @include textStyle($text-light,20px,700);
+
+                .historyYear {
+                    .history-item {
+                        .year {
+                            @include textStyle($text-light, 20px, 700);
                         }
-                        p{
+
+                        p {
                             @extend .pSub;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+.choose {
+    .container {
+        .choose-content {
+            .choose-left {
+                text-align: right;
+
+                img {
+                    border-radius: 10px;
+                }
+            }
+
+            .choose-right {
+                padding-left: 24px !important;
+
+                .row {
+                    .icon i {
+                        color: $text-green ;
+                        font-size: 44px;
+                    }
+
+                    .choose-content-title {
+                        h6 {
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $text-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team {
+    background-color: rgba(147, 107, 232, 0.05);
+
+    .container {
+        .team-content {
+            text-align: center;
+
+            .team-group {
+                .team-item {
+                    .item-content {
+                            overflow: hidden;
+                        img {
+                            border-radius: 10px;
+                            transition: all 0.5s;
+                        }
+
+                        .item-content-title {
+                            h3 {
+                                margin-top: 16px;
+                                font-size: 22px;
+                                font-weight: 600;
+                                line-height: 34px;
+
+                                a {
+                                    color: $text-dark;
+                                    transition: all 0.5s;
+                                }
+                            }
+
+                            .item-content-icon {
+                                i {
+                                    margin-right: 6px;
+                                    width: 30px;
+                                    height: 30px;
+                                    color: $text-green;
+                                    line-height: 30px;
+                                    font-size: 12px;
+                                    background-color: rgba(147, 107, 232, 0.05);
+                                    transition: all 0.5s;
+
+                                    &:hover {
+                                        color: $text-light;
+                                        ;
+                                        background: $text-green;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    &:hover {
+                        .item-content{
+                            img {
+                                transform: scale(1.1);
+                            }
+                            .item-content-title{
+                                h3 a{
+                                    color: $text-green;
+                                }
+                            }
+                        }
+                    }
+
                 }
             }
         }

@@ -1,202 +1,396 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- FontAwesome 6.1.1 CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
-<head>
-  <title>Title</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- FontAwesome 6.1.1 CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <!-- (Optional) Use CSS or JS implementation -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Bootstrap CSS v5.2.0-beta1 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <!-- google fonts -->  
-  <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- link lightbox -->
-  <link rel="stylesheet" href="./css/lightbox.css">
-  <link rel="stylesheet" href="./css/about.css">
-</head>
+    <!-- (Optional) Use CSS or JS implementation -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- google fonts -->
+    <link
+      href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link lightbox -->
+    <link rel="stylesheet" href="./css/lightbox.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+  </head>
 
-<body>
-  <!-- header -->
-  <header>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><h1>Pooch Care</h1></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Blog
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-            </ul>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h1>Pooch Care</h1></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Blog
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <section class="caurousel text-center">
-    <div class="caurousel-content py-sm-5">
+        </nav>
+      </div>
+    </header>
+    <section class="caurousel text-center">
+      <div class="caurousel-content py-sm-5">
         <div class="container py-2">
-            <h2 class="title">About Us</h2>
-            <ul class="mt-2 text-center">
-                <li><a href="">Home </a></li>
-                <li class="active"><i class="mx-2 fa fa-arrow-right"></i> About </li>
-            </ul>
-        </div>
-    </div>
-  </section>
-  <!-- about -->
- <section class="about">
-    <div class="container">
-        <div class="about-content row">
-            <div class="about-left col-lg-5 pl-lg-4">
-                <h6 class="sub-title">ABOUT US</h6>
-                <h3 class="hny-title">We Have 10+ Years Of Experience.</h3>
-                <h4>Let Us Take Care Of Your Pets!</h4>
-            </div>
-            <div class="about-right col-lg-7 pl-lg-5">
-                <p class="pSub">Lorem ipsum dolor sit amet,Ea consequuntur .Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam animi consequatur saepe blanditiis</p>
-                <p class="my-3 pSub">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit. Fuga, suscipit totam animi consequatur saepe blanditiis</p>
-                <a href="./services.html" class="read">Read More</a>
-            </div>
-        </div>
-    </div>
- </section>
- <seciton class="history">
-    <div class="feature py-5">
-        <div class="container py-5">
-            <div class="history-content py-3">
-                <h6 class="sub-title">OUR HISTORY OF POOCH CARE</h6>
-                <h3 class="hny-title">Our History</h3>
-                <p class="mt-3 mb-5 pSub">Lorem ipsum dolor sit amet,Ea consequuntur .Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam animi consequatur saepe blanditiis.Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit.</p>
-                <div class="historyYear row">
-                    <div class="history-item col-lg-3">
-                        <h5 class="year mb-1">2017</h5>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="history-item col-lg-3">
-                        <h5 class="year mb-1">2017</h5>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="history-item col-lg-3">
-                        <h5 class="year mb-1">2017</h5>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="history-item col-lg-3">
-                        <h5 class="year mb-1">2017</h5>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
- </seciton>
-  <!-- footer  -->
-  <footer class="">
-    <div class="container py-lg-3">
-      <div class="footer-content row">
-        <div class="footer-contact col-lg-6 mt-5">
-          <h6 class="footer-title mb-4">Contact information</h6>
-          <ul>
-            <li><p><b>Address : </b>#135 block, Barnard St. Brooklyn, London 10036, UK</p></li>
-            <li><p><b>Phone : </b><a href="tel:+(12)234-11-24">+(12)234-11-24</a></p></li>
-            <li><p><b>Email : </b><a href="mailto:example@mail.com">example@mail.com</a></p></li>
-          </ul>
-          <div class="icon-list">
-            <i class="icon fab fa-twitter"></i>
-            <i class="icon fab fa-facebook-f"></i>
-            <i class="icon fab fa-youtube"></i>
-            <i class="icon fab fa-instagram"></i>
-          </div>
-        </div>
-        <div class="footer-item col-lg-2 mt-5">
-          <h6 class="footer-title mb-4">Company</h6>
-          <ul>
-            <li>About Us</li>
-            <li>Blog Post</li>
-            <li>Services</li>
-            <li>Pricing</li>
-            
-          </ul>
-        </div>
-        <div class="footer-item col-lg-2 mt-5">
-          <h6 class="footer-title mb-4">Company</h6>
-          <ul>
-            <li>About Us</li>
-            <li>Blog Post</li>
-            <li>Services</li>
-            <li>Pricing</li>
-            
-          </ul>
-        </div>
-        <div class="footer-item col-lg-2 mt-5">
-          <h6 class="footer-title mb-4">Company</h6>
-          <ul>
-            <li>About Us</li>
-            <li>Blog Post</li>
-            <li>Services</li>
-            <li>Pricing</li>
-            
+          <h2 class="title">About Us</h2>
+          <ul class="mt-2 text-center">
+            <li><a href="">Home </a></li>
+            <li class="active"><i class="mx-2 fa fa-arrow-right"></i> About</li>
           </ul>
         </div>
       </div>
-    </div>
-    <div class="bottom align-center py-lg-4 py-3 mt-5">
-      <p class="copy-footer-28 text-center"> © 2020 Pooch Care. All Rights Reserved. Design by <a href="">W3Layouts</a></p>
-    </div>
-  </footer>
-  <!-- back to top -->
-  <a href="#" class="backToTop cd-top text-replace js-cd-top">
-    <i class="fa fa-arrow-up"></i>
-  </a>
-  <script src="./js/util.js"></script>
-  <script src="./js/main.js"></script>
-  <!-- lightbox -->
-  <script
+    </section>
+    <!-- about -->
+    <section class="about">
+      <div class="container">
+        <div class="about-content row">
+          <div class="about-left col-lg-5 pl-lg-4">
+            <h6 class="sub-title">ABOUT US</h6>
+            <h3 class="hny-title">We Have 10+ Years Of Experience.</h3>
+            <h4>Let Us Take Care Of Your Pets!</h4>
+          </div>
+          <div class="about-right col-lg-7 pl-lg-5">
+            <p class="pSub">
+              Lorem ipsum dolor sit amet,Ea consequuntur .Ea consequuntur illum
+              facere aperiam sequi optio consectetur adipisicing elitFuga,
+              suscipit totam animi consequatur saepe blanditiis
+            </p>
+            <p class="my-3 pSub">
+              Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam
+              sequi optio consectetur adipisicing elit. Fuga, suscipit totam
+              animi consequatur saepe blanditiis
+            </p>
+            <a href="./services.html" class="read">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <seciton class="history">
+      <div class="feature py-5">
+        <div class="container py-5">
+          <div class="history-content py-3">
+            <h6 class="sub-title">OUR HISTORY OF POOCH CARE</h6>
+            <h3 class="hny-title">Our History</h3>
+            <p class="mt-3 mb-5 pSub">
+              Lorem ipsum dolor sit amet,Ea consequuntur .Ea consequuntur illum
+              facere aperiam sequi optio consectetur adipisicing elitFuga,
+              suscipit totam animi consequatur saepe blanditiis.Lorem ipsum
+              dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
+              consectetur adipisicing elit.
+            </p>
+            <div class="historyYear row">
+              <div class="history-item col-lg-3">
+                <h5 class="year mb-1">2017</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="history-item col-lg-3">
+                <h5 class="year mb-1">2017</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="history-item col-lg-3">
+                <h5 class="year mb-1">2017</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="history-item col-lg-3">
+                <h5 class="year mb-1">2017</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </seciton>
+    <section class="choose">
+      <div class="container py-3">
+        <div class="choose-content py-5 row">
+          <div class="choose-left col-lg-6 pr-lg-4 text-lg-right">
+            <h6 class="sub-title">WHO WE ARE</h6>
+            <h3 class="hny-title">Why Choose Us</h3>
+            <p class="mt-3 mb-5 pSub">
+              Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla,
+              gravida felis vitae. Phasellus lacinia id, sunt in culpa quis.
+              Phasellus lacinia
+            </p>
+            <img src="./img/banner3.jpg" alt="" />
+          </div>
+          <div class="choose-right col-lg-6 pl-lg-4">
+            <div class="row mb-lg-5 mb-4">
+              <div class="icon col-md-2">
+                <i class="fa-solid fa-hands-asl-interpreting"></i>
+              </div>
+              <div class="choose-content-title col-md-10">
+                <h6>Care Advices</h6>
+                <p class="pSub">
+                  Lorem ipsum dolor sit amet,Ea consequuntur illum facere
+                  aperiam sequi optio consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="row mb-lg-5 mb-4">
+              <div class="icon col-md-2">
+                <i class="fa-solid fa-circle-question"></i>
+              </div>
+              <div class="choose-content-title col-md-10">
+                <h6>Emergency Services</h6>
+                <p class="pSub">
+                  Lorem ipsum dolor sit amet,Ea consequuntur illum facere
+                  aperiam sequi optio consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="row mb-lg-5 mb-4">
+              <div class="icon col-md-2">
+                <i class="fa-solid fa-headphones"></i>
+              </div>
+              <div class="choose-content-title col-md-10">
+                <h6>Customer Supports</h6>
+                <p class="pSub">
+                  Lorem ipsum dolor sit amet,Ea consequuntur illum facere
+                  aperiam sequi optio consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="row mb-lg-5 mb-4">
+              <div class="icon col-md-2">
+                <i class="fa-solid fa-user-doctor"></i>
+              </div>
+              <div class="choose-content-title col-md-10">
+                <h6>Veterinary Help</h6>
+                <p class="pSub">
+                  Lorem ipsum dolor sit amet,Ea consequuntur illum facere
+                  aperiam sequi optio consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team">
+      <div class="container py-5">
+        <div class="team-content py-5">
+          <div class="team-title mb-4">
+            <h6 class="sub-title">OUR EXPERTS</h6>
+            <h3 class="hny-title">Our Team</h3>
+          </div>
+          <div class="team-group row">
+            <div class="team-item col-lg-3 col-6">
+              <div class="item-content">
+                <img src="./img/team1.jpg" alt="" />
+                <div class="item-content-title">
+                  <h3 class="name-pos"><a href="">Micheal Wagou</a></h3>
+                  <p class="psub">Training</p>
+                  <div class="item-content-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-item col-lg-3 col-6">
+              <div class="item-content">
+                <img src="./img/team2.jpg" alt="" />
+                <div class="item-content-title">
+                  <h3 class="name-pos"><a href="">Alex Mitchell</a></h3>
+                  <p class="psub">Boarding</p>
+                  <div class="item-content-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-item col-lg-3 col-6">
+              <div class="item-content">
+                <img src="./img/team3.jpg" alt="" />
+                <div class="item-content-title">
+                  <h3 class="name-pos"><a href="">Scott Colon</a></h3>
+                  <p class="psub">Grooming</p>
+                  <div class="item-content-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-item col-lg-3 col-6">
+              <div class="item-content">
+                <img src="./img/team4.jpg" alt="" />
+                <div class="item-content-title">
+                  <h3 class="name-pos"><a href="">John Harris</a></h3>
+                  <p class="psub">Doggie Day Care</p>
+                  <div class="item-content-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer  -->
+    <footer class="">
+      <div class="container py-lg-3">
+        <div class="footer-content row">
+          <div class="footer-contact col-lg-6 mt-5">
+            <h6 class="footer-title mb-4">Contact information</h6>
+            <ul>
+              <li>
+                <p>
+                  <b>Address : </b>#135 block, Barnard St. Brooklyn, London
+                  10036, UK
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Phone : </b><a href="tel:+(12)234-11-24">+(12)234-11-24</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Email : </b
+                  ><a href="mailto:example@mail.com">example@mail.com</a>
+                </p>
+              </li>
+            </ul>
+            <div class="icon-list">
+              <i class="icon fa fa-twitter"></i>
+              <i class="icon fa fa-facebook-f"></i>
+              <i class="icon fa fa-youtube"></i>
+              <i class="icon fa fa-instagram"></i>
+            </div>
+          </div>
+          <div class="footer-item col-lg-2 mt-5">
+            <h6 class="footer-title mb-4">Company</h6>
+            <ul>
+              <li>About Us</li>
+              <li>Blog Post</li>
+              <li>Services</li>
+              <li>Pricing</li>
+            </ul>
+          </div>
+          <div class="footer-item col-lg-2 mt-5">
+            <h6 class="footer-title mb-4">Company</h6>
+            <ul>
+              <li>About Us</li>
+              <li>Blog Post</li>
+              <li>Services</li>
+              <li>Pricing</li>
+            </ul>
+          </div>
+          <div class="footer-item col-lg-2 mt-5">
+            <h6 class="footer-title mb-4">Company</h6>
+            <ul>
+              <li>About Us</li>
+              <li>Blog Post</li>
+              <li>Services</li>
+              <li>Pricing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom align-center py-lg-4 py-3 mt-5">
+        <p class="copy-footer-28 text-center">
+          © 2020 Pooch Care. All Rights Reserved. Design by
+          <a href="">W3Layouts</a>
+        </p>
+      </div>
+    </footer>
+    <!-- back to top -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+      <i class="fa fa-arrow-up"></i>
+    </a>
+    <script src="./js/util.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- lightbox -->
+    <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
       crossorigin="anonymous"
     ></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
-  </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
-  </script><script src="./js/lightbox.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ac234f51f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/lightbox.js"></script>
+  </body>
 </html>
